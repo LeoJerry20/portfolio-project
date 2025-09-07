@@ -267,6 +267,41 @@
   transition: width 2s ease-in-out;
 }
 
+#certificates {
+  padding: 2rem;
+  text-align: center;
+}
+
+.certificates-heading {
+  color: whitesmoke;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.certificates-container {
+  display: flex;
+  gap: 1rem; 
+  overflow-x: auto;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+
+ 
+}
+
+.certificates-container img {
+  height: 250px; /* Adjust the height as you want */
+  object-fit: contain;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  transition: transform 0.3s ease;
+}
+
+.certificates-container img:hover {
+  transform: scale(1.05);
+}
+
 /* #experience {
   padding: 4rem 2rem;
   color: #ddd;
@@ -419,6 +454,7 @@
   <a href="#about">About</a>
   <a href="#projects">Projects</a>
   <a href="#skills">Skills</a>
+  <a href="#certificates">Certificates</a>
   <a href="#experience">Experience</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -427,7 +463,7 @@
 
 <section id="home">
   <div class="gradient-blur"></div>
-  <img src="C:\Users\leoje\Downloads\Leo_Photo.jpg" alt="Leo Jerry Profile Photo" 
+  <img src="./main.jpg" alt="Leo Jerry Profile Photo" 
        style="width: 200px; height: auto; border-radius: 50%; border: 4px solid var(--secondary-color); box-shadow: 0 0 20px var(--primary-color); margin-bottom: 1rem;">
   
   <h1>Leo Jerry S</h1>
@@ -450,7 +486,7 @@
   
   <p class="fade-in" style="max-width: 800px; text-align: center; margin: 1rem 0; color: #ddd;">
     I have a strong foundation in <strong style="color: var(--secondary-color);">Java</strong> and have also worked with 
-    <strong style="color: var(--secondary-color);">HTML, CSS, JavaScript, C, C++</strong> and 
+    <strong style="color: var(--secondary-color);">SQL, HTML, CSS, JavaScript, C, C++</strong> and 
     <strong style="color: var(--secondary-color);">Python</strong>. 
     I am passionate about building clean, efficient, and user-friendly applications 
     and continuously strive to expand my technical skills.
@@ -495,25 +531,25 @@
     
     <div class="project-card">
       <h3 class="project-title">🚍JDBC BUS RESERVATION SYSTEM</h3>
-      <img src="C:\Users\leoje\Downloads\jdbc bus reservation system.png" alt="Bus Reservation System" style="width:100%; border-radius:8px;"/>
+      <img src="./jdbc bus reservation system.png" alt="Bus Reservation System" style="width:100%; border-radius:8px;"/>
       <p class="project-description">A powerful and efficient system to manage bus seat bookings and operations using Java and JDBC integration with databases.</p>
     </div>
     
     <div class="project-card">
     <h3 class="project-title">🤖TELEGRAM BOT for CGPA CACULATOR</h3>
-      <img src="C:\Users\leoje\Downloads\Telegram cgpa calculator bot.png" alt="Telegram CGPA Bot" style="width:100%; border-radius:8px;"/>
+      <img src="./Telegram cgpa calculator bot.png" alt="Telegram CGPA Bot" style="width:100%; border-radius:8px;"/>
       <p class="project-description">A Telegram bot to calculate CGPA for students, built using Python and Telegram-API with real-time responses.</p>
     </div>
     
     <div class="project-card">
       <h3 class="project-title">🌾MULTI-TASKING AGRIBOT</h3>
-      <img src="C:\Users\leoje\Downloads\Multi Tasking agribot for feild.png" alt="Multi-tasking Agribot" style="width:100%; border-radius:8px;"/>
+      <img src="./Multi Tasking agribot for feild.png" alt="Multi-tasking Agribot" style="width:100%; border-radius:8px;"/>
       <p class="project-description">An advanced agricultural robot engineered for multiple field and lawn tasks, enhancing productivity and reducing manual effort.</p>
     </div>
 
     <div class="project-card">
       <h3 class="project-title">🚓LINE FOLLOWER ROBOT</h3>
-      <img src="C:\Users\leoje\Downloads\line follower robot embedded c.png" alt="Multi-tasking Agribot" style="width:100%; border-radius:8px;"/>
+      <img src="./line follower robot embedded c.png" alt="Multi-tasking Agribot" style="width:100%; border-radius:8px;"/>
       <p class="project-description">A robot that follows a path by integrating IR sensors and motor drivers with a microcontroller, developed using Proteus, Keil, and Embedded C.</p>
     </div>
     
@@ -567,6 +603,25 @@
     
   </div>
 </section>
+
+<section id="certificates">
+  <div class="gradient-blur"></div>
+  <h2 class="certificates-heading">My Certificates</h2>
+  <div class="certificates-container">
+    <img src="C:\Users\leoje\OneDrive\Pictures\importants\JavaCseCertificate.jpg" alt="Java Certificate">
+    <img src="C:\Users\leoje\OneDrive\Pictures\importants\pythonCseCertificate.jpg" alt="C++ Certificate">
+    <img src="C:\Users\leoje\OneDrive\Pictures\importants\NsicInternshipCertificate.jpg" alt="HTML Certificate">
+    <img src="C:\Users\leoje\OneDrive\Pictures\importants\KaashivInfotechInternshipCertificate.jpg" alt="Python Certificate">
+    <img src="C:\Users\leoje\OneDrive\Pictures\importants\codeathonCertificate.jpg" alt="SQL Certificate">
+    <img src="C:\Users\leoje\OneDrive\Pictures\importants\vtmtProjectExpoCertificate.jpg" alt="SQL Certificate">
+    <img src="C:\Users\leoje\OneDrive\Pictures\importants\aptimindCertificate.jpg" alt="SQL Certificate">
+    <img src="C:\Users\leoje\OneDrive\Pictures\importants\pranavTechnicalSymposiumParticipationCertificate.jpg" alt="SQL Certificate">
+    <img src="C:\Users\leoje\OneDrive\Pictures\importants\techyugamParticipationCertificate.jpg" alt="SQL Certificate">
+    <!-- Add more images as needed -->
+  </div>
+</section>
+
+
 
 <section id="experience">
   <div class="gradient-blur"></div>
@@ -686,7 +741,7 @@ window.addEventListener('load', revealOnScroll);
   function downloadResume() {
     // Replace with actual resume file
     const link = document.createElement('a');
-    link.href = "C:\Users\leoje\OneDrive\Documents\LeoJerry_Resume.pdf";
+    link.href = "./LeoJerry_Resume.pdf";
     link.download = 'Leo_Jerry_Resume.pdf';
     link.click();
   }
